@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashwath Shiva P — AI Engineer & Developer Portfolio</title>
+  <meta name="description" content="Cinematic editorial portfolio of Ashwath Shiva P — Computer Science Engineering student exploring AI, Machine Learning, RAG architectures, and systems development.">
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23151413'/><circle cx='16' cy='16' r='6' fill='%23FF4938'/></svg>">
+
+  <!-- Anti-flicker Session State & No-Script Guard for Cinematic Loader -->
+  <script>
+    (function() {
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var forceReplay = params.has('intro') || params.has('replay');
+        if (!forceReplay && sessionStorage.getItem('ashwath_portfolio_loaded') === 'true') {
+          document.documentElement.classList.add('loader-bypassed');
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <noscript>
+    <style>
+      #cinematic-loader { display: none !important; }
+      html.loader-active, body.loader-active { overflow: auto !important; }
+    </style>
+  </noscript>
+</head>
+<body>
+
+  <!-- ========================================================================
+       Cinematic Typography & Vermilion Beam Loading System
+       ======================================================================== -->
+  <aside id="cinematic-loader" class="cinematic-loader" aria-label="Loading Portfolio" aria-live="polite">
+    <!-- Atmospheric Depth & Film Grain -->
+    <div class="loader-vignette" aria-hidden="true"></div>
+    <div class="loader-grain" aria-hidden="true"></div>
+
+    <!-- Ambient Vermilion Atmospheric Glow -->
+    <div class="loader-ambient-glow" aria-hidden="true"></div>
+
+    <!-- Cinematic Cutting Beam (Diagonal Optical Flare) -->
+    <div class="loader-beam-container" aria-hidden="true">
+      <div class="loader-beam">
+        <div class="beam-core"></div>
+        <div class="beam-flare"></div>
+        <div class="beam-sheen"></div>
+      </div>
+    </div>
+
+    <!-- Editorial Top Meta Bar -->
+    <header class="loader-meta-bar loader-meta-top">
+      <div class="meta-item">
+        <span class="meta-dot" aria-hidden="true"></span>
+        <span class="meta-text">[01 // RUNTIME INIT]</span>
+      </div>
+      <div class="meta-item meta-center">
+        <span class="meta-text">ASHWATH SHIVA P &bull; 2026</span>
+      </div>
+      <div class="meta-item meta-right">
+        <span class="meta-text hide-mobile">ENGINEERING INTELLIGENCE</span>
+      </div>
+    </header>
+
+    <!-- Monumental Bold Editorial Typography Stage -->
+    <div class="loader-typography-stage">
+      <div class="loader-type-wrapper">
+        <div class="loader-type-row" data-row="1">
+          <div class="type-mask">
+            <span class="type-text type-base">ASHWATH SHIVA</span>
+            <span class="type-text type-illum" aria-hidden="true">ASHWATH SHIVA</span>
+          </div>
+        </div>
+        <div class="loader-type-row" data-row="2">
+          <div class="type-mask">
+            <span class="type-text type-base">ENGINEERING INTELLIGENCE</span>
+            <span class="type-text type-illum" aria-hidden="true">ENGINEERING INTELLIGENCE</span>
+          </div>
+        </div>
+        <div class="loader-type-row" data-row="3">
+          <div class="type-mask">
+            <span class="type-text type-base">SYSTEMS &bull; DATA &bull; CODE</span>
+            <span class="type-text type-illum" aria-hidden="true">SYSTEMS &bull; DATA &bull; CODE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lower Progress Rail & Understated Status Console -->
+    <div class="loader-bottom-console">
+      <div class="loader-progress-rail" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="loader-progress-rail">
+        <div class="loader-progress-bar" id="loader-progress-bar">
+          <div class="loader-progress-glow"></div>
+        </div>
+      </div>
+      <footer class="loader-meta-bar loader-meta-bottom">
+        <div class="meta-item">
+          <span class="meta-status-label" id="loader-status-text">INITIALIZING CORE ENVIRONMENT</span>
+        </div>
+        <div class="meta-item meta-center hide-mobile">
+          <span class="meta-ticker" id="loader-ticker">SYS.ONLINE // MEM.OK // BUF.READY</span>
+        </div>
+        <div class="meta-item meta-right">
+          <span class="meta-counter" id="loader-counter">00%</span>
+        </div>
+      </footer>
+    </div>
+  </aside>
+
+  <!-- Subtle Film Grain Texture Overlay for Atmospheric Depth -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       04. Navigation — Compact, Editorial, Precise
+       ======================================================================== -->
+  <header class="nav-header">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-wordmark" id="nav-brand" aria-label="Ashwath Shiva Home">
+        <span>ASHWATH SHIVA</span>
+        <span class="wordmark-role">[01 // AI & DEV]</span>
+      </a>
+
+      <!-- Desktop Navigation Links in Requested Logical Flow -->
+      <nav aria-label="Primary Desktop Navigation">
+        <ul class="nav-links">
+          <li class="nav-link-item"><a href="#hero" class="active" aria-current="location"><span class="nav-idx">01</span> Home</a></li>
+          <li class="nav-link-item"><a href="#about"><span class="nav-idx">02</span> About</a></li>
+          <li class="nav-link-item"><a href="#projects"><span class="nav-idx">03</span> Projects</a></li>
+          <li class="nav-link-item"><a href="#skills"><span class="nav-idx">04</span> Skills</a></li>
+          <li class="nav-link-item"><a href="#credentials"><span class="nav-idx">05</span> Credentials</a></li>
+          <li class="nav-link-item"><a href="#contact"><span class="nav-idx">06</span> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Nav Actions -->
+      <div class="nav-actions">
+        <a href="./assets/ashwath-shiva-resume.pdf" download="Ashwath_Shiva_P_Resume.pdf" class="btn-nav-resume" id="nav-btn-resume">
+          <i data-lucide="download" style="width: 13px; height: 13px;"></i>
+          <span>Resume PDF</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu (Accessible, Focus Managed) -->
+  <div class="mobile-nav-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <ul>
+      <li><a href="#hero" class="mobile-nav-link active" aria-current="location"><span class="drawer-idx">01</span> Home</a></li>
+      <li><a href="#about" class="mobile-nav-link"><span class="drawer-idx">02</span> About</a></li>
+      <li><a href="#projects" class="mobile-nav-link"><span class="drawer-idx">03</span> Projects</a></li>
+      <li><a href="#skills" class="mobile-nav-link"><span class="drawer-idx">04</span> Skills</a></li>
+      <li><a href="#credentials" class="mobile-nav-link"><span class="drawer-idx">05</span> Credentials</a></li>
+      <li><a href="#contact" class="mobile-nav-link"><span class="drawer-idx">06</span> Contact</a></li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <div style="display: flex; gap: 16px; margin-bottom: 12px; flex-wrap: wrap;">
+        <a href="./projects.html" style="color: var(--color-ivory);">All Projects →</a>
+        <a href="./resume.html" style="color: var(--color-ivory);">Verified Resume →</a>
+        <a href="./certificates.html" style="color: var(--color-ivory);">Certificates →</a>
+      </div>
+      <div>Ashwath Shiva P · Kasaragod, Kerala, India</div>
+      <div>ashwath0598@gmail.com</div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ======================================================================
+         03. HERO SECTION — CINEMATIC EDITORIAL FIRST IMPRESSION
+         ====================================================================== -->
+    <section class="hero-section" id="hero">
+      <!-- Interactive Ambient Canvas: React Bits ShapeGrid -->
+      <div id="hero-shape-grid" class="hero-shape-grid" aria-hidden="true"></div>
+
+      <div class="container">
+        
+        <!-- Main Asymmetrical Hero Grid -->
+        <div class="hero-composition">
+          
+          <!-- Left Column: Brutalist Typography & Narrative -->
+          <div class="hero-text-block">
+            <div class="editorial-eyebrow">
+              <span class="index-accent">[01 // FOLIO]</span>
+              <span>Engineering Intelligence & Scalable Software</span>
+            </div>
+
+            <div class="hero-headline-wrap">
+              <h1 class="hero-headline">
+                <span class="hero-line">BUILDING</span>
+                <span class="hero-line vermilion-accent">INTELLIGENT</span>
+                <span class="hero-line">THINGS.</span>
+              </h1>
+            </div>
+
+            <div class="hero-subhead">
+              MAKING TECHNOLOGY MATTER.
+            </div>
+
+            <p class="hero-description">
+              I am a Computer Science and Engineering student at Vimal Jyothi Engineering College (KTU) building at the intersection of Retrieval-Augmented Generation, audio signal processing, and robust web applications.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary" id="hero-btn-explore">
+                <span>Explore Featured Work</span>
+                <i data-lucide="arrow-right" style="width: 15px; height: 15px;"></i>
+              </a>
+              <a href="#about" class="btn btn-secondary" id="hero-btn-profile">
+                <span>Technical Profile</span>
+              </a>
+              <a href="./assets/ashwath-shiva-resume.pdf" download="Ashwath_Shiva_P_Resume.pdf" class="btn btn-ghost" id="hero-btn-download">
+                <i data-lucide="download" style="width: 14px; height: 14px;"></i>
+                <span>Resume PDF</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Cinematic Monolith Fine-Art Visual -->
+          <div class="hero-visual-frame" aria-label="Portrait illustration of Ashwath Shiva P">
+            <img src="./assets/images/hero-portrait.jpg" alt="Portrait illustration of Ashwath Shiva P" loading="eager" width="576" height="1024" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src='./public/assets/images/hero-portrait.jpg';}">
+            <div class="visual-coordinate-stamp">FIG. 01 // COMPUTATIONAL MONOLITH</div>
+            <div class="visual-bottom-caption">
+              <span>LAT: 12.5102° N, 74.9852° E</span>
+              <span>ARCHITECTURAL SYMMETRY</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hero Bottom Scroll Cue -->
+        <div class="hero-bottom-cue">
+          <a href="#about" class="scroll-cue-link" aria-label="Scroll to about section">
+            <i data-lucide="arrow-down" style="width: 14px; height: 14px; color: var(--color-vermilion);"></i>
+            <span>Scroll to Explore Section 02</span>
+          </a>
+          <span>Index: 01 / 06</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         07. ABOUT SECTION (#about) — HUMAN, TECHNICAL, CREDIBLE
+         ====================================================================== -->
+    <section class="section-spacing about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header-row">
+          <div>
+            <div class="editorial-eyebrow">
+              <span class="index-accent">[02 // IDENTITY]</span>
+              <span>Human, Technical & Grounded</span>
+            </div>
+            <h2 class="display-heading">
+              Building intelligent systems <span class="accent-word">with purpose.</span>
+            </h2>
+          </div>
+        </div>
+
+        <!-- Asymmetric About Layout -->
+        <div class="about-grid">
+          
+          <!-- Left: Engineering Workspace Still Life -->
+          <div class="about-visual-column">
+            <div class="about-image-card">
+              <img src="./assets/images/about-workspace.jpg" alt="Cinematic engineering workbench with dark stone slate, precision metallic instruments, architectural chiaroscuro lighting, and restrained vermilion edge accent" loading="lazy" width="800" height="600">
+            </div>
+            <div class="about-visual-caption">
+              <span>WORKBENCH // SYSTEM SKETCHES</span>
+              <span>MATHEMATICAL FOUNDATIONS</span>
+            </div>
+          </div>
+
+          <!-- Right: Concise Technical Profile -->
+          <div class="about-content-column">
+            <p class="about-statement">
+              I'm a Computer Science and Engineering student passionate about AI, machine learning, and full-stack development. I enjoy turning complex problems into practical, well-engineered solutions through thoughtful design, experimentation, and clean code.
+            </p>
+
+            <div style="margin-top: var(--space-3); display: flex; gap: var(--space-2); flex-wrap: wrap;">
+              <a href="./resume.html" class="btn btn-secondary">
+                <i data-lucide="file-text" style="width: 14px; height: 14px;"></i>
+                <span>Read Full Resume</span>
+              </a>
+              <a href="./certificates.html" class="btn btn-ghost">
+                <i data-lucide="award" style="width: 14px; height: 14px;"></i>
+                <span>View Certifications</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         06. PROJECTS SECTION (#projects) — CONCISE 3 FEATURED SHOWCASE
+         ====================================================================== -->
+    <section class="section-spacing projects-section" id="projects">
+      <div class="container">
+        
+        <div class="section-header-row">
+          <div>
+            <div class="editorial-eyebrow">
+              <span class="index-accent">[03 // FEATURED WORK]</span>
+              <span>Concise Engineering Highlights</span>
+            </div>
+            <h2 class="display-heading">
+              Featured <span class="accent-word">Projects.</span>
+            </h2>
+          </div>
+          <p class="section-lead">
+            Three focused case studies showcasing Retrieval-Augmented Generation, audio deep learning, and responsive web systems.
+          </p>
+        </div>
+
+        <!-- ==================================================================
+             FEATURED 01 — KTU AI (Concise 30-word description)
+             ================================================================== -->
+        <article class="case-study" id="case-study-ktu">
+          <div class="case-study-topbar">
+            <span class="case-study-num">PROJECT 01 / 03</span>
+            <div class="case-study-status">
+              <span class="status-dot-vermilion" aria-hidden="true"></span>
+              <span>Active Alpha · In Development</span>
+            </div>
+          </div>
+
+          <div class="case-study-layout-featured">
+            <div class="case-study-body">
+              <div>
+                <div class="case-study-title-block">
+                  <h3 class="case-study-title">KTU AI</h3>
+                  <div class="case-study-subtitle">RAG-Based Intelligent Academic Assistant</div>
+                </div>
+
+                <p class="case-study-desc-concise">
+                  An academic assistant in development using retrieval-augmented generation to help KTU students explore syllabus-grounded learning resources. Built with a Python FastAPI backend, Qdrant Cloud vector search, and a modern React interface.
+                </p>
+
+                <ul class="case-study-tags" aria-label="KTU AI Technologies">
+                  <li class="tech-tag">React</li>
+                  <li class="tech-tag">TypeScript</li>
+                  <li class="tech-tag">FastAPI</li>
+                  <li class="tech-tag">Python</li>
+                  <li class="tech-tag">Qdrant Cloud</li>
+                  <li class="tech-tag">RAG Pipeline</li>
+                </ul>
+              </div>
+
+              <div class="case-study-actions">
+                <a href="https://github.com/ashwathshiva" target="_blank" rel="noopener noreferrer" class="project-repo-btn">
+                  <i data-lucide="github" style="width: 15px; height: 15px;"></i>
+                  <span>Inspect Code</span>
+                  <i data-lucide="arrow-up-right" style="width: 13px; height: 13px;"></i>
+                </a>
+                <a href="./projects.html#project-ktu" class="project-repo-btn" style="border-color: var(--color-separator);">
+                  <span>Detailed Architecture →</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="case-study-visual">
+              <div class="case-study-image-wrap">
+                <img src="./assets/images/project-ktu-ai.jpg" alt="Monolithic dark obsidian and basalt archival document slabs sliced by a precision vermilion laser beam representing semantic retrieval" loading="lazy" width="800" height="450">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================================================================
+             FEATURED 02 — URBAN SOUND CLASSIFICATION (Concise 28-word description)
+             ================================================================== -->
+        <article class="case-study" id="case-study-sound">
+          <div class="case-study-topbar">
+            <span class="case-study-num">PROJECT 02 / 03</span>
+            <div class="case-study-status">
+              <span class="status-dot-vermilion" aria-hidden="true"></span>
+              <span>Completed Machine Learning Project</span>
+            </div>
+          </div>
+
+          <div class="case-study-layout-featured case-study-layout-reversed">
+            <div class="case-study-visual">
+              <div class="case-study-image-wrap">
+                <img src="./assets/images/project-urban-sound.jpg" alt="Sculptural 3D acoustic spectrogram topology carved into dark basalt stone with a vermilion contour line tracing frequency peaks in an anechoic chamber" loading="lazy" width="800" height="450">
+              </div>
+            </div>
+
+            <div class="case-study-body">
+              <div>
+                <div class="case-study-title-block">
+                  <h3 class="case-study-title">Urban Sound Classification</h3>
+                  <div class="case-study-subtitle">Deep Learning Environmental Acoustic Event Recognition</div>
+                </div>
+
+                <p class="case-study-desc-concise">
+                  A machine-learning project exploring environmental audio classification using Python. Preprocesses raw waveforms into 40-band MFCC spectrograms and classifies acoustic scenes through a 2D Convolutional Neural Network in PyTorch.
+                </p>
+
+                <ul class="case-study-tags" aria-label="Urban Sound Technologies">
+                  <li class="tech-tag">Python</li>
+                  <li class="tech-tag">PyTorch</li>
+                  <li class="tech-tag">Librosa</li>
+                  <li class="tech-tag">NumPy</li>
+                  <li class="tech-tag">scikit-learn</li>
+                </ul>
+              </div>
+
+              <div class="case-study-actions">
+                <a href="https://github.com/ashwathshiva/acoustix-urban-sound-classification" target="_blank" rel="noopener noreferrer" class="project-repo-btn">
+                  <i data-lucide="github" style="width: 15px; height: 15px;"></i>
+                  <span>Inspect Code</span>
+                  <i data-lucide="arrow-up-right" style="width: 13px; height: 13px;"></i>
+                </a>
+                <a href="./projects.html#project-sound" class="project-repo-btn" style="border-color: var(--color-separator);">
+                  <span>Signal Blueprint →</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================================================================
+             FEATURED 03 — PERIOD TRACKER (Concise 27-word description)
+             ================================================================== -->
+        <article class="case-study" id="case-study-tracker">
+          <div class="case-study-topbar">
+            <span class="case-study-num">PROJECT 03 / 03</span>
+            <div class="case-study-status">
+              <span class="status-dot-vermilion" aria-hidden="true"></span>
+              <span>Completed Web Application</span>
+            </div>
+          </div>
+
+          <div class="case-study-layout-featured">
+            <div class="case-study-body">
+              <div>
+                <div class="case-study-title-block">
+                  <h3 class="case-study-title">Period Tracker</h3>
+                  <div class="case-study-subtitle">Private Cycle Tracking & Health Calendar Web Application</div>
+                </div>
+
+                <p class="case-study-desc-concise">
+                  A private web application built with PHP, HTML5, CSS3, and JavaScript, designed around a clear, responsive cycle-tracking calendar with local relational data storage and zero telemetry.
+                </p>
+
+                <ul class="case-study-tags" aria-label="Period Tracker Technologies">
+                  <li class="tech-tag">PHP</li>
+                  <li class="tech-tag">HTML5</li>
+                  <li class="tech-tag">CSS3</li>
+                  <li class="tech-tag">JavaScript</li>
+                  <li class="tech-tag">MySQL</li>
+                </ul>
+              </div>
+
+              <div class="case-study-actions">
+                <a href="https://github.com/ashwathshiva" target="_blank" rel="noopener noreferrer" class="project-repo-btn">
+                  <i data-lucide="github" style="width: 15px; height: 15px;"></i>
+                  <span>Inspect Code</span>
+                  <i data-lucide="arrow-up-right" style="width: 13px; height: 13px;"></i>
+                </a>
+                <a href="./projects.html#project-tracker" class="project-repo-btn" style="border-color: var(--color-separator);">
+                  <span>Database & UI Details →</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="case-study-visual">
+              <div class="case-study-image-wrap">
+                <img src="./assets/images/project-period-tracker.jpg" alt="Abstract cyclical orbital sculpture of precision-milled matte obsidian and dark graphite rings with a glowing vermilion phase arc indicator" loading="lazy" width="800" height="450">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Homepage Call to Action for Dedicated All Projects Page -->
+        <div class="projects-cta-box">
+          <div>
+            <span class="projects-cta-label">[CATALOGUE // 03 ARCHIVE]</span>
+            <h3 class="projects-cta-title">Explore Detailed Case Studies & Architecture</h3>
+            <p class="projects-cta-desc">
+              Review expanded technical blueprints, RAG pipeline query simulations, audio spectrogram topology, and implementation roadmaps in the full archive.
+            </p>
+          </div>
+          <a href="./projects.html" class="btn btn-primary" id="btn-explore-all-projects">
+            <span>Explore All Projects</span>
+            <i data-lucide="arrow-up-right" style="width: 16px; height: 16px;"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         08. TECHNICAL SKILLS (#skills) — EDITORIAL, NOT A DASHBOARD
+         ====================================================================== -->
+    <section class="section-spacing skills-section" id="skills">
+      <div class="container">
+        
+        <div class="section-header-row">
+          <div>
+            <div class="editorial-eyebrow">
+              <span class="index-accent">[04 // CAPABILITIES]</span>
+              <span>Scannable, Truthful, Structured</span>
+            </div>
+            <h2 class="display-heading">
+              Technical <span class="accent-word">Capabilities.</span>
+            </h2>
+          </div>
+          <p class="section-lead">
+            No synthetic percentage meters or circular graphics. Only technologies validated through course examinations, completed internships, and functional project repositories.
+          </p>
+        </div>
+
+        <!-- 6 Editorial Skills Categories -->
+        <div class="skills-grid">
+          
+          <!-- Category 01 -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-title">Languages</span>
+              <span class="skill-cat-idx">01</span>
+            </div>
+            <ul class="skill-pill-list">
+              <li class="skill-pill-item">Python</li>
+              <li class="skill-pill-item">Java</li>
+              <li class="skill-pill-item">C</li>
+              <li class="skill-pill-item">JavaScript</li>
+              <li class="skill-pill-item">PHP</li>
+              <li class="skill-pill-item">SQL</li>
+            </ul>
+          </div>
+
+          <!-- Category 02 -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-title">AI & Machine Learning</span>
+              <span class="skill-cat-idx">02</span>
+            </div>
+            <ul class="skill-pill-list">
+              <li class="skill-pill-item">NumPy</li>
+              <li class="skill-pill-item">Pandas</li>
+              <li class="skill-pill-item">RAG Architectures</li>
+              <li class="skill-pill-item">Prompt Engineering</li>
+            </ul>
+          </div>
+
+          <!-- Category 03 -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-title">Backend & Web</span>
+              <span class="skill-cat-idx">03</span>
+            </div>
+            <ul class="skill-pill-list">
+              <li class="skill-pill-item">FastAPI</li>
+              <li class="skill-pill-item">HTML5 Semantic</li>
+              <li class="skill-pill-item">CSS3 / Responsive</li>
+            </ul>
+          </div>
+
+          <!-- Category 04 -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-title">Databases & Vectors</span>
+              <span class="skill-cat-idx">04</span>
+            </div>
+            <ul class="skill-pill-list">
+              <li class="skill-pill-item">Qdrant Vector DB</li>
+              <li class="skill-pill-item">Supabase</li>
+              <li class="skill-pill-item">MySQL</li>
+            </ul>
+          </div>
+
+          <!-- Category 05 -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-title">Tools & Systems</span>
+              <span class="skill-cat-idx">05</span>
+            </div>
+            <ul class="skill-pill-list">
+              <li class="skill-pill-item">Git</li>
+              <li class="skill-pill-item">GitHub</li>
+              <li class="skill-pill-item">VS Code</li>
+              <li class="skill-pill-item">XAMPP</li>
+            </ul>
+          </div>
+
+          <!-- Category 06 -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-title">Core Disciplines</span>
+              <span class="skill-cat-idx">06</span>
+            </div>
+            <ul class="skill-pill-list">
+              <li class="skill-pill-item">Data Structures & Algo</li>
+              <li class="skill-pill-item">DBMS Architecture</li>
+              <li class="skill-pill-item">Operating Systems</li>
+              <li class="skill-pill-item">Computer Networks</li>
+              <li class="skill-pill-item">UI/UX Wireframing</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         09. CREDENTIALS & EXPERIENCE (#credentials)
+         ====================================================================== -->
+    <section class="section-spacing credentials-section" id="credentials">
+      <div class="container">
+        
+        <div class="section-header-row">
+          <div>
+            <div class="editorial-eyebrow">
+              <span class="index-accent">[05 // VERIFICATION]</span>
+              <span>Authentic Records & Documents</span>
+            </div>
+            <h2 class="display-heading">
+              Credentials & <span class="accent-word">Record.</span>
+            </h2>
+          </div>
+          <p class="section-lead">
+            Every certification and internship record is backed by authentic documents available for verification and review.
+          </p>
+        </div>
+
+        <div class="credentials-container-split">
+          
+          <!-- Left: Timeline of Education & Internships -->
+          <div class="cred-timeline-block">
+            <div class="cred-block-title">Education & Practical Training</div>
+
+            <!-- Item 1: B.Tech -->
+            <div class="cred-item">
+              <div class="cred-item-header">
+                <span class="cred-role">B.Tech in Computer Science & Engineering</span>
+                <span class="cred-date">2023 – 2027</span>
+              </div>
+              <div class="cred-org">Vimal Jyothi Engineering College, Kannur, Kerala (KTU)</div>
+              <p class="cred-desc">
+                Cumulative Grade Point Average (CGPA): <strong>7.74 / 10</strong>. Core coursework: Data Structures, Analysis of Algorithms, Database Systems, Computer Networks, Operating Systems.
+              </p>
+            </div>
+
+            <!-- Item 2: Full Stack Intern -->
+            <div class="cred-item">
+              <div class="cred-item-header">
+                <span class="cred-role">Full Stack Development Intern</span>
+                <span class="cred-date">27 May – 13 June</span>
+              </div>
+              <div class="cred-org">Zoople Technologies, Kochi, Kerala</div>
+              <p class="cred-desc">
+                Developed web applications with Django, HTML, CSS, JavaScript, and MySQL. Handled frontend/backend integration and structured database schemas.
+              </p>
+            </div>
+
+            <!-- Item 3: UI/UX Intern -->
+            <div class="cred-item">
+              <div class="cred-item-header">
+                <span class="cred-role">UI/UX Design Intern</span>
+                <span class="cred-date">26 May – 9 June · Cert: TMZ/INT0626/2706</span>
+              </div>
+              <div class="cred-org">TECHMINDZ, Infopark, Kochi, Kerala</div>
+              <p class="cred-desc">
+                Designed user wireframes, interaction journeys, and high-fidelity mockups. Studied cognitive load, visual hierarchy, accessibility, and heuristic evaluation.
+              </p>
+            </div>
+
+            <!-- Item 4: Data Science Intern -->
+            <div class="cred-item">
+              <div class="cred-item-header">
+                <span class="cred-role">Data Science with Python Intern</span>
+                <span class="cred-date">15 Days Practical Program</span>
+              </div>
+              <div class="cred-org">Techmaghi Technical Training</div>
+              <p class="cred-desc">
+                Implemented Python algorithms for predictive modeling, exploratory data analysis, and tabular data preprocessing.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: Verified Certifications Summary Box -->
+          <div class="certs-summary-block">
+            <div>
+              <div class="cred-block-title">Verified Certifications</div>
+              
+              <ul class="certs-list">
+                <li class="cert-list-item">
+                  <div class="cert-info">
+                    <span class="cert-name">Python 101 for Data Science</span>
+                    <span class="cert-meta">IBM SkillsBuild · Issued Dec 13, 2025</span>
+                  </div>
+                  <a href="./assets/certificates/ibm-python-101.pdf" target="_blank" class="cert-pdf-link">
+                    <span>PDF</span>
+                    <i data-lucide="external-link" style="width: 12px; height: 12px;"></i>
+                  </a>
+                </li>
+
+                <li class="cert-list-item">
+                  <div class="cert-info">
+                    <span class="cert-name">Data Science 101 (DS0101EN)</span>
+                    <span class="cert-meta">IBM SkillsBuild · Issued Dec 13, 2025</span>
+                  </div>
+                  <a href="./assets/certificates/ibm-datascience-101.pdf" target="_blank" class="cert-pdf-link">
+                    <span>PDF</span>
+                    <i data-lucide="external-link" style="width: 12px; height: 12px;"></i>
+                  </a>
+                </li>
+
+                <li class="cert-list-item">
+                  <div class="cert-info">
+                    <span class="cert-name">UI/UX Internship Certificate</span>
+                    <span class="cert-meta">TECHMINDZ Infopark · TMZ/INT0626/2706</span>
+                  </div>
+                  <a href="./assets/certificates/techmindz-internship.pdf" target="_blank" class="cert-pdf-link">
+                    <span>PDF</span>
+                    <i data-lucide="external-link" style="width: 12px; height: 12px;"></i>
+                  </a>
+                </li>
+
+                <li class="cert-list-item">
+                  <div class="cert-info">
+                    <span class="cert-name">Prompt Engineering</span>
+                    <span class="cert-meta">AWS Training & Certification · Completed Dec 15, 2025</span>
+                  </div>
+                  <a href="./assets/certificates/prompt-engineering.pdf" target="_blank" class="cert-pdf-link">
+                    <span>PDF</span>
+                    <i data-lucide="external-link" style="width: 12px; height: 12px;"></i>
+                  </a>
+                </li>
+
+                <li class="cert-list-item">
+                  <div class="cert-info">
+                    <span class="cert-name">TechMaghi — Two-Month Course Certificate</span>
+                    <span class="cert-meta">TechMaghi · Completed Aug 06, 2025</span>
+                  </div>
+                  <a href="./assets/certificates/techmaghi-data-science.jpg" target="_blank" class="cert-pdf-link">
+                    <span>View</span>
+                    <i data-lucide="external-link" style="width: 12px; height: 12px;"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Working Download Buttons & Navigation Pathways -->
+            <div class="certs-footer-actions">
+              <a href="./assets/ashwath-shiva-resume.pdf" download="Ashwath_Shiva_P_Resume.pdf" class="btn btn-primary" id="btn-download-resume-main">
+                <i data-lucide="download" style="width: 15px; height: 15px;"></i>
+                <span>Download Verified Resume (PDF)</span>
+              </a>
+              <a href="./certificates.html" class="btn btn-secondary">
+                <i data-lucide="award" style="width: 14px; height: 14px;"></i>
+                <span>All Certificates</span>
+              </a>
+              <a href="./resume.html" class="btn btn-ghost">
+                <i data-lucide="file-text" style="width: 14px; height: 14px;"></i>
+                <span>Full Web Resume</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         10. CONTACT SECTION (#contact) — EDITORIAL CLOSING
+         ====================================================================== -->
+    <section class="section-spacing contact-section" id="contact">
+      <div class="container">
+        
+        <div class="contact-editorial-wrap">
+          <div class="editorial-eyebrow">
+            <span class="index-accent">[06 // COLLABORATION]</span>
+            <span>Let's Build Something That Matters</span>
+          </div>
+
+          <h2 class="contact-display-heading">
+            Let's Build Something <span class="vermilion-accent">That Matters.</span>
+          </h2>
+
+          <p class="contact-lead-text">
+            I am actively seeking internship opportunities, junior AI/ML engineering roles, and meaningful software collaborations. Reach out directly via email or professional profiles.
+          </p>
+
+          <!-- Verified Editorial Channel Cards: Symmetrical 4-Channel Grid (No Phone Number) -->
+          <div class="contact-channels-grid">
+            
+            <a href="mailto:ashwath0598@gmail.com" class="channel-card" id="contact-card-email">
+              <span class="channel-label">Direct Communication // 01</span>
+              <div class="channel-value">
+                <span>ashwath0598@gmail.com</span>
+                <i data-lucide="arrow-up-right" style="width: 14px; height: 14px; color: var(--color-vermilion);"></i>
+              </div>
+            </a>
+
+            <div class="channel-card">
+              <span class="channel-label">Physical Location // 02</span>
+              <div class="channel-value">
+                <span>Kasaragod, Kerala, India</span>
+                <i data-lucide="map-pin" style="width: 14px; height: 14px; color: var(--color-vermilion);"></i>
+              </div>
+            </div>
+
+            <a href="https://github.com/ashwathshiva" target="_blank" rel="noopener noreferrer" class="channel-card" id="contact-card-github">
+              <span class="channel-label">Source Repositories // 03</span>
+              <div class="channel-value">
+                <span>github.com/ashwathshiva</span>
+                <i data-lucide="arrow-up-right" style="width: 14px; height: 14px; color: var(--color-vermilion);"></i>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ashwathshiva" target="_blank" rel="noopener noreferrer" class="channel-card" id="contact-card-linkedin">
+              <span class="channel-label">Professional Network // 04</span>
+              <div class="channel-value">
+                <span>linkedin.com/in/ashwathshiva</span>
+                <i data-lucide="arrow-up-right" style="width: 14px; height: 14px; color: var(--color-vermilion);"></i>
+              </div>
+            </a>
+
+          </div>
+
+          <!-- Bottom Action Row: Primary Action Only (Redundant CV button removed) -->
+          <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+            <a href="mailto:ashwath0598@gmail.com" class="btn btn-primary" id="btn-email-primary">
+              <i data-lucide="mail" style="width: 15px; height: 15px;"></i>
+              <span>Initiate Email Conversation</span>
+            </a>
+            <a href="./projects.html" class="btn btn-secondary">
+              <i data-lucide="folder-git-2" style="width: 14px; height: 14px;"></i>
+              <span>Explore All Projects</span>
+            </a>
+            <a href="./assets/ashwath-shiva-resume.pdf" download="Ashwath_Shiva_P_Resume.pdf" class="btn btn-ghost">
+              <i data-lucide="download" style="width: 14px; height: 14px;"></i>
+              <span>Download Resume PDF</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Site Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-credits">
+        <span>© 2026 ASHWATH SHIVA P. All rights reserved. Built with precision & authentic data.</span>
+      </div>
+
+      <div class="footer-status-tag">
+        <span class="meta-status-dot" aria-hidden="true"></span>
+        <span>Open for Internships & Engineering Roles</span>
+      </div>
+
+      <a href="#hero" class="footer-back-to-top" id="btn-back-to-top" aria-label="Scroll back to top">
+        <span>Back to Top</span>
+        <i data-lucide="arrow-up" style="width: 14px; height: 14px;"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Floating Ambient Soundscape Controller -->
+  <aside class="ambient-audio-widget" id="ambient-audio-widget" role="region" aria-label="Ambient Soundscape Controller">
+    <div class="ambient-audio-inner">
+      <!-- Collapsible Volume Slider Track -->
+      <div class="ambient-volume-panel" id="ambient-volume-panel" aria-label="Ambient volume controls" aria-hidden="true">
+        <div class="ambient-slider-track-wrap">
+          <input 
+            type="range" 
+            id="ambient-volume-slider" 
+            class="ambient-volume-slider"
+            min="0" 
+            max="1" 
+            step="0.01" 
+            value="0.28" 
+            aria-label="Ambient music volume level"
+          />
+          <div class="ambient-slider-fill" id="ambient-slider-fill" style="width: 28%;"></div>
+        </div>
+      </div>
+
+      <!-- Explicit Volume Panel Toggle Button -->
+      <button 
+        type="button" 
+        class="ambient-volume-toggle-btn" 
+        id="ambient-volume-toggle" 
+        aria-label="Toggle volume slider"
+        aria-expanded="false"
+        title="Volume controls"
+      >
+        <svg class="vol-icon" id="ambient-vol-svg" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+        </svg>
+      </button>
+
+      <!-- Compact Circular Audio Toggle Button (44px) -->
+      <button 
+        type="button" 
+        class="ambient-audio-btn" 
+        id="ambient-audio-toggle"
+        aria-label="Play ambient music"
+        aria-pressed="false"
+        title="Ambient music: Off (Click to play)"
+      >
+        <span class="ambient-wave" id="ambient-audio-wave" aria-hidden="true">
+          <span class="wave-bar bar-1"></span>
+          <span class="wave-bar bar-2"></span>
+          <span class="wave-bar bar-3"></span>
+          <span class="wave-bar bar-4"></span>
+        </span>
+      </button>
+
+      <!-- Floating Notice / Status Tooltip -->
+      <div class="ambient-notice-tooltip" id="ambient-audio-notice" role="status" aria-live="polite" aria-hidden="true">
+        <span class="notice-dot" aria-hidden="true"></span>
+        <span class="notice-text" id="ambient-notice-text"></span>
+      </div>
+    </div>
+  </aside>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
